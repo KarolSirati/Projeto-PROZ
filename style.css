@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    
+}
+main{
+    padding: 0 50px;
+    margin: 10px;
+}
+header{
+    background-color: #000000;
+    height: 40px;
+    width: 100%;
+    display: flex;
+}
+.logo-img{
+    height: 40px;
+    padding-left: 30px;
+}
+.menu{
+    display: flex;
+    width: 100%;
+    padding-right: 50px;
+}
+.menu-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style-type: none;
+}
+a:hover{
+    color:rgba(255,255,255,0.8);
+}
+.pagina1-title{
+    font-family: Catamaran, 'sans-serif';
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 57.4px;
+    letter-spacing: 0.10em;
+    text-align:center;
+
+}
+.imagemtopo{
+    width: 100%;
+    height: 352px;
+    top: 133px;
+    left: 146px;
+    gap: 0px;
+    border-radius: 40px 0px 0px 0px;
+    opacity: 0px;
+    margin:0 20px;
+    padding: 10px;
+    
+}
+.t1novidades{
+    font-family: Catamaran;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 82px;
+    letter-spacing:0.11em;
+    text-align: center;  
+
+}
+.t2novidades{
+    font-family: Catamaran;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 82px;
+    letter-spacing:0.11em;
+    text-align: center;  
+
+}
+.t3novidades{
+    font-family: Catamaran;
+    font-size: 50px;
+    font-weight: 500;
+    line-height: 82px;
+    letter-spacing:0.11em;
+    text-align: center;  
+
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Catamaran, 'sans-serif';
+    font-size: 16px;
+}
+.pagina1-title{
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    font-family: Catamaran, 'sans-serif';
+    font-size: 50px;
+    font-weight: 300;
+
+}
+/*formatacao de elementos de imagem e descriçao chamando a class secoes*/
+.pagina1-section-1,.pagina1-section-2,.pagina1-section-3{
+    display: flex;
+    justify-content: center;
+    gap: 40px;                  /*há algum erro na section3. O gap está maior*/
+    margin-top: 70px;
+}
+/*formatacao de elementos de imagem e descriçao chamando a class div */
+.pagina1-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    width:100%
+}
+/*formatacao de elementos de imagem geral */
+img{
+    overflow-clip-margin: content-box;
+    overflow: clip;
+}
+/*formatacao de da tag paragrafo descricao de roupas */
+.paragraph-description{
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 18px;
+    letter-spacing: 2px;
+    
+}
+/*formatacao da informacao preco de cada item*/
+.price-description{
+    font-family: "Catamaran", sans-serif;
+    font-weight: 700;
+    font-size: 20px;  
+}
+/*formatacao objeto botao*/
+.butom-description{
+    font-size: 15px;
+    background: #BFA37E;
+    border-radius: 50px;
+    color: #000000;
+    font-weight: 800;
+    cursor: pointer;
+    height: 40px;
+    margin-left: 5px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 8px;
+    margin-top: 200px;
+    background-color: #e6d5be;
+    list-style-type: none;
+}
+
+.footer-img{
+    width: 35px;
+}
+.textofooter{
+    color:#000000;
+}
