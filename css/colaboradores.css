@@ -63,23 +63,41 @@ a{
 
 }
 
-.perfil-1{
-    display: inline-flex;
-    flex-direction: column;
+.container {
+
+    display: flex;
+    align-items: center;
     justify-content: center;
-    margin: 11px;
+    margin-left: 3cm;
+
+}
+
+.conteudo-1, .conteudo-2, .conteudo-3, .conteudo-4{
+    display: table;
+ 
+}
+
+.imagem {
+    display: table-cell;
+    float: left;
+
+
+
+}
+
+.texto {
+    display: table-cell;
+    float: left;
+    width: 250px;
+
     text-align: center;
-    font-size: 20px;
-    font-weight: 50;
-    line-height: 25px;
+    font-family: "Catamaran", sans-serif;
+    font-optical-sizing: auto;
   
 }
 
 
-img{
-    overflow-clip-margin: content-box;
-    overflow: clip;
-}
+
 
 .paragraph-description{
     font-family: "Catamaran", sans-serif;
