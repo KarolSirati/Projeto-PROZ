@@ -1,0 +1,203 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Catamaran:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+header{
+    background-color: #000000;
+    height: 40px;
+    width: 100%;
+    display: flex;
+}
+
+.logo-img{
+    height: 40px;
+    padding-left: 30px;
+}
+
+.menu{
+    display: flex;
+    width: 100%;
+    padding-right: 50px;
+}
+
+.menu-list{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 20px;
+    list-style-type: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: Catamaran, 'sans-serif';
+    font-size: 16px;
+}
+
+.product-title{
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    font-family: Catamaran, 'sans-serif';
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.product-section-1{
+    margin: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.product-section-2{
+    padding-right: 300px;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    position: relative;
+    top: -170px;
+
+}
+
+.product-img-1{
+    margin-right: 800px;
+}
+
+.product-img-2{
+    margin-right: 500px;
+}
+
+.product-rede-social-1{
+    position: relative;
+    top: -120px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Catamaran, 'sans-serif';
+    margin-right: 170px;
+}
+
+.product-rede-social-2{
+    position: relative;
+    top: -120px;
+    font-size: 30px;
+    font-weight: 400;
+    font-family: Catamaran, 'sans-serif';
+    margin-right: 150px;
+}
+
+.product-btn-1{
+    font-size: 16px;
+    background: #BFA37E;
+    border-radius: 30px;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    height: 40px;
+    margin-right: 170px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -130px;
+}
+
+.product-btn-2{
+    font-size: 16px;
+    background: #BFA37E;
+    border-radius: 30px;
+    color: #000000;
+    font-weight: 600;
+    letter-spacing: 1px;
+    cursor: pointer;
+    height: 40px;
+    width: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -130px;
+    margin-right: 150px;
+}
+
+.form-title{
+    margin: 3%;
+    display: flex;
+    justify-content: center;
+    font-family: Catamaran, 'sans-serif';
+    font-size: 50px;
+    font-weight: 300;
+    margin-top: -100px;
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 400px;
+    margin: 0 auto;
+    padding: 4%;
+    background: #e6d5be;
+    border-radius: 15px;
+    font-family: Catamaran, 'sans-serif';
+    font-weight: 600;
+    font-size: 18px;
+}
+
+.form-div-1, .form-div-2{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+input{
+    border-radius: 10px;
+    height: 30px;
+    width: 400px;
+    padding: 5px;
+}
+
+textarea{
+    border-radius: 10px;
+    height: 50px;
+    width: 370px;
+    padding: 20px;
+}
+
+.form-btn{
+    border-radius: 10px;
+    height: 40px;
+    width: 110px;
+    padding: 5px;
+    margin: 30px;
+    margin-left: 140px;
+}
+
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 8px;
+    margin-top: 200px;
+    background-color: #e6d5be;
+    list-style-type: none;
+}
+
+.footer-img{
+    width: 35px;
+}
