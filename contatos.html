@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
+    <script src="js/contatos.js"></script>
+    <link rel="stylesheet" href="./css/contatos.css">
 </head>
 <body>
     <header>
-        <img src="./img/LOGO header.png" alt="Logo Moda Online">
-        <nav>
-            <ul>
+        <img class="logo-img" src="./img/LOGO header.png" alt="Logo Moda Online">
+        <nav class="menu">
+            <ul class="menu-list">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="quemsomos.html">Quem Somos</a></li>
                 <li><a href="produtos.html">Produtos</a></li>
@@ -19,46 +21,51 @@
         </nav>
     </header>
     <main>
-        <h1>CONTATOS</h1>
-        <section>
-            <img src="img/contatos/logo whatsapp.png" alt="Logo whatsapp">
-            <h2>whatsapp</h2>
-            <a href="https://web.whatsapp.com/">Clique aqui!</a>
+        <h1 class="product-title">CONTATOS</h1>
+        <section class="product-section-1">
+            <img class="product-img-1" src="img/contatos/logo whatsapp.png" alt="Logo whatsapp">
+            <h2 class="product-rede-social-1">WHATSAPP</h2>
+            <a class="product-btn-1" href="https://web.whatsapp.com/">Clique aqui!</a>
+        </section>
+        <section class="product-section-2">
+            <img class="product-img-2" src="img/contatos/logo instagram.png" alt="Logo instagram">
+            <h2 class="product-rede-social-2">INSTAGRAM</h2>
+            <a class="product-btn-2" href="https://web.whatsapp.com/">Clique aqui!</a>
         </section>
         <section>
-            <img src="img/contatos/logo instagram.png" alt="Logo instagram">
-            <h2>Instagram</h2>
-            <a href="https://web.whatsapp.com/">Clique aqui!</a>
-        </section>
-        <section>
-            <h2>FORMULÁRIO</h2>
+            <h2 class="form-title">FORMULÁRIO</h2>
         <form action="" method="post">
-            <section>
-                <div>
-                    <label for="nome">Nome:</label>
-                    <input type="text" name="nome" id="nome" required placeholder="Digite o seu nome">
+            <section class="form">
+                <div class="form-div-1">
+                    <label for="name">Nome:</label>
+                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
+                    <div class="error" id="name-invalid-error">Nome inválido.</div>
                 </div>
-                <div>
+                <div class="form-div-2">
                     <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" required placeholder="Digite seu email">
-                </div>
-                <div>
+                    <input type="text" name="email" id="email" placeholder="Digite seu email" required>
+                    <div class="error" id="email-invalid-error">Email inválido.</div>
+                <div class="form-div-3">
                     <p><label for="melhorias">Sugestões de melhorias:</label></p>
                     <textarea id="melhorias" name="melhorias" rows="4" cols="50"></textarea>
+                    <div class="error" id="melhorias-invalid-error">Assunto inválido.</div>
                 </div>
-                <div>
+                <div class="form-div-4">
                     <p><label for="feedback">Feedback:</label></p>
                     <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
+                    <div class="error" id="feedback-invalid-error">Mensagem inválida</div>
                 </div>
-                <input type="submit" value="Enviar">
+                <input class="form-btn" type="submit" value="Enviar">
             </section>
         </form>      
           </section> 
     </main>
     <footer>
-        <ul>
-         <li>copyright@ modaonline</li>
-        </ul> 
-</footer>
+        <ul class="footer">
+         <li><a href="https://www.instagram.com/"><img class="footer-img" src="./img/contatos/Logo instagram.png"></a></li>
+         <li><a href="https://pt-br.facebook.com/"><img class="footer-img" src="./img/contatos/Logo facebook.png"></a></li>
+         <li><a href="https://x.com/i/flow/login?redirect_after_login=%2Fsearch"><img class="footer-img" src="./img/contatos/Logo twitter.png"></a></li>
+        </ul>
+    </footer>
 </body>
 </html>
