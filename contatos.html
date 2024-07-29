@@ -32,30 +32,44 @@
             <h2 class="product-rede-social-2">INSTAGRAM</h2>
             <a class="product-btn-2" href="https://web.whatsapp.com/">Clique aqui!</a>
         </section>
-        <section>
-            <h2 class="form-title">FORMULÁRIO</h2>
-        <form action="" method="post">
+
+        <section class="container">
+        <form action="formulario.js"  id="form" method="post">
             <section class="form">
-                <div class="form-div-1">
-                    <label for="name">Nome:</label>
-                    <input type="text" name="name" id="name" placeholder="Digite seu nome" required>
-                    <div class="error" id="name-invalid-error">Nome inválido.</div>
+                <div>
+                    <p class="sub-title">Querido Cliente,</p>
+                    <p class="sub-title">Seu feedback é importante pra gente.</p>
+
                 </div>
-                <div class="form-div-2">
-                    <label for="email">Email:</label>
-                    <input type="text" name="email" id="email" placeholder="Digite seu email" required>
-                    <div class="error" id="email-invalid-error">Email inválido.</div>
-                <div class="form-div-3">
-                    <p><label for="melhorias">Sugestões de melhorias:</label></p>
-                    <textarea id="melhorias" name="melhorias" rows="4" cols="50"></textarea>
-                    <div class="error" id="melhorias-invalid-error">Assunto inválido.</div>
-                </div>
-                <div class="form-div-4">
-                    <p><label for="feedback">Feedback:</label></p>
-                    <textarea id="feedback" name="feedback" rows="4" cols="50"></textarea>
-                    <div class="error" id="feedback-invalid-error">Mensagem inválida</div>
-                </div>
-                <input class="form-btn" type="submit" value="Enviar">
+                <div>
+                <label for="nome">Nome</label>
+                <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
+                <span class="span-required">Nome deve ter no mínimo 3 caracteres.</span>
+            </div>
+            <div>
+                <label for="emai">E-mail</label>
+                <input type="email" placeholder="Digite e-mail para contato" class="inputs required" oninput="emailValidate()">
+                <span class="span-required">Digite um email válido.</span>
+            </div>
+            <div>
+                <label for="avaliacao">Avaliação das Coleções</label>
+                <textarea name="avaliacao" placeholder="Conte para nós sua experiencia com as coleções"
+                id="avaliacao" name="" id=""></textarea>
+            </div>
+            <div>
+                <label for="sugestao">Sugestões para nossa Página</label>
+                <textarea name="avaliacao" placeholder="Ajude-nos a melhorar sua experiência"
+                id="sugestao" name="" id=""></textarea>
+            </div>
+            <div class="custom-checkbox">
+                <input id="checkbox-1" type="checkbox">
+                <label for="checkbox-1">Desejo receber notificaçõoes via e-mail.</label>
+            </div>
+
+
+            <button type="submit" id="Enviar" onclick="myFunction()">Enviar</button>
+
+
             </section>
         </form>      
           </section> 
@@ -68,4 +82,9 @@
         </ul>
     </footer>
 </body>
+<script type="text/javascript" src="js/formulario.js">
+    </script>
+<script src="js/enviar_form.js"></script>
+
+
 </html>
