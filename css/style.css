@@ -2,7 +2,10 @@
 *{
     padding: 0;
     margin: 0;
-    
+body {
+    background-color:rgba(239, 237, 235, 1);
+    ;
+}    
 }
 main{
     padding: 0 50px;
@@ -158,10 +161,59 @@ img{
     background-color: #e6d5be;
     list-style-type: none;
 }
-
+/*EStilizaçao da classe depoimentos*/
+.depoimentos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Catamaran, 'sans-serif';
+    font-size: 20px;
+    font-weight: 200;
+    line-height: 57.4px;
+    letter-spacing: 0.12em;
+    width: 100%;
+    padding: 50px 20px;
+    max-width: 900px;
+    
+}
+.depoimentos i{
+    font-size: 90px;
+    color:#ccc;
+    position:relative;
+    max-width: 900px;
+    overflow: hiden;
+}
+.depoimentos .slide{
+    padding: 40px 20px;
+    cursor: grab;
+}
+.depoimentos .slide:active{
+    cursor:grabbing;
+}
+.depoimentos p.depoi-txt{
+    font-weight: 200;
+    margin-bottom: 40px;
+    
+}
+.slide .person{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.slide .person p.nome-person{
+    font-size: 18px;
+    font-weight: 600;
+}
+.slide .person p.func-person{
+    font-size: 14px; 
+}
 .footer-img{
     width: 35px;
 }
 .textofooter{
     color:#000000;
+}
+
+.t1novidades, .t2novidades, .t3novidades{
+    visibility: hidden;
 }
