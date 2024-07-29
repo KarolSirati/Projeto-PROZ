@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Catamaran, 'sans-serif';
 }
 
 
@@ -11,6 +12,11 @@ header{
     height: 40px;
     width: 100%;
     display: flex;
+}
+
+body{
+   
+    background-color: #EFEDEB;
 }
 
 .logo-img{
@@ -36,7 +42,6 @@ header{
 a{
     text-decoration: none;
     color: white;
-    font-family: Catamaran, 'sans-serif';
     font-size: 16px;
 }
 /* Formata o titulo Quem somos */
@@ -44,17 +49,16 @@ a{
     margin: 3%;
     display: flex;
     justify-content: center;
-    font-family: Catamaran, 'sans-serif';
-    font-size: 50px;
+   font-size: 50px;
     font-weight: 300;
 }
 
 
 /* Formata a imagem após o titulo */
-.quemsomos-img{
+#quemsomos-img{
     display: flex;
     flex-direction: column;
-    width: 660px;
+    width: 630px;
     margin:0px auto;
     gap: 10px;
    
@@ -62,8 +66,7 @@ a{
 
 
 img{
-    overflow-clip-margin: content-box;
-    overflow: clip;
+ 
     filter: drop-shadow(10px 10px 10px rgba(146, 146, 137, 0.425));
 }
 
@@ -75,32 +78,59 @@ img{
     margin-top: 50px;
     margin: 3%;
     text-align: justify;
-    font-family: Catamaran, 'sans-serif';
     font-size: 20px;
     /* espaçamento */
     line-height:25px;
 }
+.texto{
+    display: flex;
+    justify-content: center;
+    gap: 40px;                  
+    margin-top: 50px;
+    margin: 3%;
+    text-align: justify;
+    font-size: 17px;
+    /* espaçamento */
+    line-height:25px;
+}
+
+.textos{
+    display: flex;
+    justify-content: center;
+    gap: 40px;                  
+    margin-top: 50px;
+    margin: 3%;
+    text-align: justify;
+    font-size: 17px;
+    /* espaçamento */
+    line-height:25px;
+}
+
+
+
 /* Formata as 4 imagens após o titulo */
 .quemsomos-section-2{
     display: flex;
+    width: 100%;
+    height: 100%;
     justify-content: center;
-    font-family: Catamaran, 'sans-serif';
     gap: 40px;                  
     margin-top: 70px;
     margin: 3%;
-    
+
+
+ 
 }
+
 /* formata os 4 titulos abaixo das 4 imagens */
 .titulo{
     display: flex;
     justify-content: center; 
-    font-family: Catamaran, 'sans-serif';
 }
-/* Alinhar as imagens laterais */
+/* Alinhar as imagens laterais Colaboradores e parceiros */
 .alinhar{
     display: flex;
     justify-content: center;
-    font-family: Catamaran, 'sans-serif';
     gap: 40px;                  
     margin-top: 70px;
     margin: 3%;
@@ -121,11 +151,7 @@ height: auto;
 
 }
 
-.textos{
-display: flex;
-justify-content: center; 
-font-family: Catamaran, 'sans-serif'; 
-}
+
 
 .footer{
     display: flex;
