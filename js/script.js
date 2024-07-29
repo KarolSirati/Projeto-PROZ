@@ -1,6 +1,8 @@
 // ---------- CARREGA IMAGENS PELO JS---------- //
-//------------Foto Principa---------------------//
-document.getElementsByClassName("logo-img").innerHTML="<img src='./img/LOGO header.png' alt=Logo Moda Online>";
+//------------Foto Principal logo---------------------//
+document.getElementById("logo-img-left").innerHTML="<img src='./img/LOGO header.png' alt=Logo Moda Online>";
+//------------Foto Capa ------------------------------//
+document.getElementsByClassName("imagemtopo").innerHTML="<img src='./img/index/FOTO CABIDE index.png'alt=Foto de cabides com roupas>";
 //----------Novidades--------------------------//
 document.getElementById("foto1").innerHTML= "<img src='./img/index/FOTO1 novidades.png'alt=Foto da modelo com cascaco lilás>";
 document.getElementById("foto2").innerHTML="<img src='./img/index/FOTO2 novidades.png'alt=Foto do modelo com conjunto blusa e short>";
