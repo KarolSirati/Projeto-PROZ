@@ -4,11 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link rel="stylesheet"href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="./js/swiper-bundle.min.js"></script>
+    <script src="./js/script.js" defer></script>
     <title>Página Inicial</title>
 </head>
 <body>
     <header>
-        <img class="logo-img" src="./img/LOGO header.png" alt="Logo Moda Online">
+        <span class="logo-img"></span>
         <nav class="menu">
             <ul class="menu-list">
                 <li><a href="index.html">Início</a></li>
@@ -29,25 +35,25 @@
 
         <section class="pagina1-section-1">
             <div class="pagina1-div">
-                <img src="./img/index/FOTO1 novidades.png" alt="Foto da modelo com cascaco lilás">
+                <span id="foto1"></span>
                 <p class="paragraph-description">Moletom Feminino Com Capuz</p>
                 <p class="price-description">R$150,00</p>
                 <a class="butom-description" href="https://web.whatsapp.com/">Quero comprar!</a>
             </div>
             <div class="pagina1-div">
-                <img src="./img/index/FOTO2 novidades.png" alt="Foto do modelo com conjunto blusa e short">
+                <span id="foto2"></span>
                 <p class="paragraph-description">Conjunto Masculino Blusa E Short</p>
                 <p class="price-description">R$100,00</p>
                 <a class="butom-description" href="https://web.whatsapp.com/">Quero comprar!</a>
             </div>
             <div class="pagina1-div">
-                <img src="./img/index/FOTO3 novidades.png" alt="Foto da modelo com blusa branca e calça">
+                <span id="foto3"></span>
                 <p class="paragraph-description">Blusa Feminina Manga Longa</p>
                 <p class="price-description">R$70,00</p>
                 <a class="butom-description" href="https://web.whatsapp.com/">Quero comprar!</a>
             </div>
             <div class="pagina1-div">
-                <img src="./img/index/FOTO4 novidades.png" alt="Foto do modelo com conjunto moletom">
+                <span id="foto4"></span>
                 <p class="paragraph-description">Moletom Masculino Com Capuz</p>
                 <p class="price-description">R$150,00</p>
                 <a class="butom-description" href="https://web.whatsapp.com/">Quero comprar!</a>
@@ -58,25 +64,25 @@
 
         <section class="pagina1-section-2">
             <div class="pagina1-div">
-                <img src="./img/index/FOTO1 promoções.png" alt="Foto de duas modelos com blusa branca">
+                <span id="fotoPromo1"></span>
                 <p class="paragraph-description">Blusa Feminina Sem Manga Vazada</p>
                 <p class="price-description">R$50,00</p>
                 <a class="butom-description" href="https://web.whatsapp.com/">Quero comprar!</a>
             </div>
             <div class="pagina1-div">
-                <img src="./img/index/FOTO2 promoções.png" alt="Foto da modelo com suéter">
+                <span id="fotoPromo2"></span>
                 <p class="paragraph-description">Suéter Feminino Casual</p>
                 <p class="price-description">R$100,00</p>
                 <a class="butom-description" href="https://web.whatsapp.com/">Quero comprar!</a>
             </div>
             <div class="pagina1-div">
-                <img src="./img/index/FOTO3 promoções.png" alt="Foto da modelo com blusa manga curta">
+                <span id="fotoPromo3"></span>
                 <p class="paragraph-description">Blusa Feminina Manga Curta</p>
                 <p class="price-description"R$50,00></p>
                 <a class="butom-description" href="https://web.whatsapp.com/">Quero comprar!</a>
             </div>
             <div class="pagina1-div">
-                <img src="./img/index/FOTO4 promoções.png" alt="Foto da modelo com blusa manga cumprida">
+                <span id="fotoPromo4"></span>
                 <p class="paragraph-description">Blusa Feminina Manga Longa Bordada</p>
                 <p class="price-description">R$150,00</p>
                 <a class="butom-description" href="https://web.whatsapp.com/">Quero comprar!</a>
@@ -87,30 +93,84 @@
 
         <section class="pagina1-section-3">
             <div class="pagina1-div">
-                <img src="./img/index/FOTO1 +vendidos.png" alt="Foto blusa feminina manga longa">
+                <span id="fotoVend1"></span>
                 <p class="paragraph-description">Blusa Feminina Social Manga Longa</p>
                 <p class="price-description">R$150,00</p>
                 <a class="butom-description" href="https://web.whatsapp.com/">Quero comprar!</a>
             </div>
             <div class="pagina1-div">
-                <img src="./img/index/FOTO2 +vendidos.png" alt="Foto da modelo com manga curta">
+                <span id="fotoVend2"></span>
                 <p class="paragraph-description">Blusa Manga Curta Com Estampa</p>
                 <p class="price-description">R$100,00</p>
                 <a  class="butom-description"href="https://web.whatsapp.com/">Quero comprar!</a>
             </div>
             <div class="pagina1-div">
-                <img src="./img/index/FOTO3 +vendidos.png" alt="Foto da modelo conjunto blusa e short">
+                <span id="fotoVend3"></span>
                 <p class="paragraph-description">Conjunto Feminino Blusa Manga Curta e Short</p>
                 <p class="price-description">R$150,00</p>
                 <a class="butom-description" href="https://web.whatsapp.com/">Quero comprar!</a>
             </div>
             <div class="pagina1-div">
-                <img src="./img/index/FOTO4 +vendidos.png" alt="Foto da modelo com blazer">
+                <span id="fotoVend4"></span>
                 <p class="paragraph-description">Blazer Feminino</p>
                 <p class="price-description">R$150,00</p>
                 <a class="butom-description" href="https://web.whatsapp.com/">Quero comprar!</a>
             </div>
         </section>
+    <!--teste de depoimentos na pagina--> 
+        <section class="depoimentos mySwiper">
+            <div class="depoimentos-container swiper-wrapper">
+              <div class="slide swiper-slide">
+                <i class="bi bi-quote"></i>
+
+                <p class="depoi-txt">
+                   Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consectetur officia a dolor quasi veniam esse eos recusandae doloremque rem nihil optio quo quaerat error velit cupiditate vel, ipsum dignissimos.
+                
+                </p>
+                <div class="person">
+                    <img src="./img/index/usuario1-depoi.png" alt="Usuario depoente">
+                     <div class="info-person">
+                      <p class="nome-person">Julio Campos</p>
+                      <p class="func-person">Aluno Proz B2B</p>
+                     </div>  
+                 </div>
+                </div>
+                <div class="slide swiper-slide">
+                    <i class="bi bi-quote"></i>
+    
+                    <p class="depoi-txt">
+                       Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consectetur officia a dolor quasi veniam esse eos recusandae doloremque rem nihil optio quo quaerat error velit cupiditate vel, ipsum dignissimos.
+                    
+                    </p>
+                    <div class="person">
+                        <img src="./img/index/usuario1-depoi.png" alt="Usuario depoente">
+                         <div class="info-person">
+                          <p class="nome-person">Antonio Alameida</p>
+                          <p class="func-person">Designer</p>
+                         </div>  
+                     </div>
+                    </div>
+                    <div class="slide swiper-slide">
+                        <i class="bi bi-quote"></i>
+        
+                        <p class="depoi-txt">
+                           Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ab consectetur officia a dolor quasi veniam esse eos recusandae doloremque rem nihil optio quo quaerat error velit cupiditate vel, ipsum dignissimos.
+                        
+                        </p>
+                        <div class="person">
+                            <img src="./img/index/usuario1-depoi.png" alt="Usuario depoente">
+                             <div class="info-person">
+                              <p class="nome-person">Joana Santos</p>
+                              <p class="func-person">Professora</p>
+                             </div>  
+                         </div>
+                        </div>
+            </div>
+         
+                <!--<div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>--> 
+        </section>  
     </main>
     <footer>
         <ul class="footer">  
