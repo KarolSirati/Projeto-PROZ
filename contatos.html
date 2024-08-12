@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contatos</title>
-    <script src="js/contatos.js"></script>
+   <!--<script src="js/contatos.js"></script>--> 
     <link rel="stylesheet" href="./css/contatos.css">
 </head>
 <body>
@@ -43,18 +43,20 @@
                 </div>
                 <div>
                 <label for="nome">Nome</label>
-                <input type="text" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
+                <input type="text" id ="nome" placeholder="Digite seu nome" class="inputs required" oninput="nameValidate()">
+                <p id="nome-helper" class="helper-text"></p>
                 <span class="span-required">Nome deve ter no mínimo 3 caracteres.</span>
             </div>
             <div>
-                <label for="emai">E-mail</label>
-                <input type="email" placeholder="Digite e-mail para contato" class="inputs required" oninput="emailValidate()">
-                <span class="span-required">Digite um email válido.</span>
+                <label for="email">E-mail</label>
+                <input type="email" id="email" placeholder="Digite e-mail para contato" class="inputs required" oninput="emailValidate()">
+                <p id="email-helper" class="helper-text"></p>
+                <span class="span-required"></span>
             </div>
             <div>
                 <label for="avaliacao">Avaliação das Coleções</label>
-                <textarea name="avaliacao" placeholder="Conte para nós sua experiencia com as coleções"
-                id="avaliacao" name="" id=""></textarea>
+                <textarea name="avaliacao" id="avaliacao" placeholder="Conte para nós sua experiência com as coleções"></textarea>
+                <div id="error-message" class="error hidden">A avaliação deve ter pelo menos 10 caracteres.</div>
             </div>
             <div>
                 <label for="sugestao">Sugestões para nossa Página</label>
